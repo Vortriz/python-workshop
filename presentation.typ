@@ -67,6 +67,9 @@
 // Styling images
 #show image: it => box(radius: 4pt, clip: true, it)
 
+// Styling links
+#show link: set text(fill: rgb("#1a73e8"))
+
 
 // Slides begin here -------------------------------
 #focus-slide[
@@ -389,6 +392,18 @@
   Notice how we don't need to activate the environment with `source .venv/bin/activate` or `conda activate my-env`. The `uv run` command automatically uses the correct environment for the project.
 ]
 
+#slide[
+  Want to share the project with a colleague? Deploy it on cluster? Or just ensure it works in 6 months when you forget all the details?
+
+  #show: later
+
+  #set align(center + horizon)
+  #figure(
+    image("assets/meme.png", height: 75%),
+    caption: [From the guide by #link("https://www.saaspegasus.com/guides/uv-deep-dive/", "SaaS Pegasus")]
+  )
+]
+
 #focus-slide[
   Part 2: The better notebook
 ]
@@ -477,6 +492,14 @@
   - Import from Jupyter. Export to Jupyter, HTML, or PDF.
   - Deploy as an interactive web app or slides, run in the browser via Wasm.
   - Molab as a cloud alternative to Google Colab.
+
+  #speaker-note(
+    ```md
+    - Convert `pain.ipynb` to marimo notebook with `uv run marimo convert pain.ipynb -o not_pain.py`.
+    - Show how nicely marimo will prompt to install missing packages.
+    - Won't run because of duplicate exports. Ask audience beforehand to guess the error.
+    ```
+  )
 ]
 
 #focus-slide[
