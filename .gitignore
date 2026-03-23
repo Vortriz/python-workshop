@@ -3,7 +3,7 @@
 result*
 
 # Python
-.venv
+**/.venv
 **/__marimo__/session
 **/__pycache__
 .ruff_cache

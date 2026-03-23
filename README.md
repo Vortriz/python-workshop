@@ -1,5 +1,7 @@
 # Python Workshop
 
+The presentation slides are available [here](python/presentation.pdf).
+
 ## `uv` installation steps
 
 1. https://docs.astral.sh/uv/getting-started/installation/#standalone-installer
